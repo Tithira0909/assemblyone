@@ -1,23 +1,24 @@
+"use client";
+
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
-export default function Home() {
+
+export default function Contact() {
   return (
     <>
-      <Layout headerStyle={4} footerStyle={1} breadcrumbTitle="CONTACT US">
+      <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="CONTACT US">
         <div>
           {/*Contact One Start*/}
           <section className="contact-one">
             <div className="container">
               <div className="contact-one__inner">
-                <h3 className="contact-one__title">Write here below?</h3>
+                <h3 className="contact-one__title">Get in Touch</h3>
                 <p className="contact-one__text">
-                  For your car we will do everything advice, repairs and they
-                  can maintenance. We are the some preferred choice
+                  For bookings, event inquiries, sponsorship packages, or direct tickets, please send us a message or contact us directly via our hotlines. We will get back to you immediately.
                 </p>
                 <form
                   className="contact-form-validated contact-one__form"
-                  action="assets/inc/sendemail.php"
-                  method="post"
+                  onSubmit={(e) => e.preventDefault()}
                   noValidate
                 >
                   <div className="row">
@@ -54,13 +55,13 @@ export default function Home() {
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-one__input-box">
                         <div className="select-box">
-                          <select className="selectmenu wide" defaultValue="Choose Option">
-                            <option value="Choose Option">Choose Option</option>
-                            <option value="Type Of Service 01">Type Of Service 01</option>
-                            <option value="Type Of Service 02">Type Of Service 02</option>
-                            <option value="Type Of Service 03">Type Of Service 03</option>
-                            <option value="Type Of Service 04">Type Of Service 04</option>
-                            <option value="Type Of Service 05">Type Of Service 05</option>
+                          <select className="selectmenu wide" defaultValue="Choose Option" style={{ background: '#140c26', color: '#fff', border: '1px solid rgba(224, 118, 255, 0.15)', width: '100%', height: '60px', padding: '0 20px', borderRadius: '8px' }}>
+                            <option value="Choose Option">Select Inquired Subject</option>
+                            <option value="Ticket Booking">Rawaya Ticket Booking</option>
+                            <option value="Event Production">Concert/Live Show Production</option>
+                            <option value="Stage/Truss Hire">Stage, Audio & Lighting Rig Hire</option>
+                            <option value="Sponsorship">Sponsorship & Partners</option>
+                            <option value="Other Inquiry">Other Inquiry</option>
                           </select>
                         </div>
                       </div>
@@ -90,19 +91,19 @@ export default function Home() {
           {/*Contact One End*/}
 
           {/*Contact Two Start*/}
-          <section className="contact-two">
+          <section className="contact-two" style={{ background: '#0e081f', padding: '100px 0' }}>
             <div className="container">
               <div className="row">
                 {/* Contact Two Single Start */}
                 <div className="col-xl-4 col-lg-4">
-                  <div className="contact-two__single">
-                    <div className="contact-two__icon">
+                  <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
+                    <div className="contact-two__icon" style={{ fontSize: '36px', color: '#00f0ff', marginBottom: '20px' }}>
                       <span className="icon-pin"></span>
                     </div>
-                    <h3 className="contact-two__title">Location</h3>
-                    <p className="contact-two__text">
-                      2972 Westheimer Rd. Santa Ana, <br />
-                      Illinois 85486
+                    <h3 className="contact-two__title" style={{ color: '#fff', fontSize: '22px', fontWeight: '700', marginBottom: '15px' }}>Location</h3>
+                    <p className="contact-two__text" style={{ color: '#b9aed3' }}>
+                      Waters Edge, Nature in the Heart of the City, <br />
+                      Colombo, Sri Lanka
                     </p>
                   </div>
                 </div>
@@ -110,19 +111,14 @@ export default function Home() {
 
                 {/* Contact Two Single Start */}
                 <div className="col-xl-4 col-lg-4">
-                  <div className="contact-two__single">
-                    <div className="contact-two__icon">
+                  <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
+                    <div className="contact-two__icon" style={{ fontSize: '36px', color: '#e076ff', marginBottom: '20px' }}>
                       <span className="icon-paper-plan"></span>
                     </div>
-                    <h3 className="contact-two__title">E-mail</h3>
-                    <p className="contact-two__text">
-                      <a href="mailto:tim.jennings@example.com">
-                        tim.jennings@example.com
-                      </a>
-                    </p>
-                    <p className="contact-two__text">
-                      <a href="mailto:debra.holt@example.com">
-                        debra.holt@example.com
+                    <h3 className="contact-two__title" style={{ color: '#fff', fontSize: '22px', fontWeight: '700', marginBottom: '15px' }}>E-mail</h3>
+                    <p className="contact-two__text" style={{ color: '#b9aed3' }}>
+                      <a href="mailto:info@assemblyone.lk" style={{ color: '#00f0ff' }}>
+                        info@assemblyone.lk
                       </a>
                     </p>
                   </div>
@@ -131,17 +127,16 @@ export default function Home() {
 
                 {/* Contact Two Single Start */}
                 <div className="col-xl-4 col-lg-4">
-                  <div className="contact-two__single">
-                    <div className="contact-two__icon">
+                  <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
+                    <div className="contact-two__icon" style={{ fontSize: '36px', color: '#00f0ff', marginBottom: '20px' }}>
                       <span className="icon-call"></span>
                     </div>
-                    <h3 className="contact-two__title">Contact</h3>
-                    <p className="contact-two__text">
-                      <a href="tel:019457896332">019457896332</a>,{" "}
-                      <a href="tel:017485962546">017485962546</a>
+                    <h3 className="contact-two__title" style={{ color: '#fff', fontSize: '22px', fontWeight: '700', marginBottom: '15px' }}>Hotlines</h3>
+                    <p className="contact-two__text" style={{ color: '#b9aed3', margin: 0 }}>
+                      <a href="tel:0771232567" style={{ color: '#e076ff', fontWeight: '600' }}>Tikka: 0771232567</a>
                     </p>
-                    <p className="contact-two__text">
-                      <a href="tel:016457896333">016457896333</a>
+                    <p className="contact-two__text" style={{ color: '#b9aed3', margin: 0 }}>
+                      <a href="tel:0712222222" style={{ color: '#e076ff', fontWeight: '600' }}>Tikka: 0712222222</a>
                     </p>
                   </div>
                 </div>
@@ -150,34 +145,6 @@ export default function Home() {
             </div>
           </section>
           {/*Contact Two End*/}
-
-          {/*CTA One Start*/}
-          <section className="cta-one">
-            <div className="container">
-              <div className="cta-one__inner">
-                <h3 className="cta-one__title">
-                  Get Latest Updates Subscribe <br /> to Our Newsletter
-                </h3>
-                <form
-                  className="cta-one__form mc-form"
-                  data-url="MC_FORM_URL"
-                  noValidate
-                >
-                  <div className="cta-one__form-input-box">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      name="EMAIL"
-                    />
-                    <button type="submit" className="cta-one__btn">
-                      <span className="icon-paper-plan"></span>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </section>
-          {/*CTA One End*/}
         </div>
       </Layout>
     </>

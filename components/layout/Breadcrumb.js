@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Breadcrumb({ breadcrumbTitle }) {
+export default function Breadcrumb({ breadcrumbTitle, backgroundImage = "/assets/images/backgrounds/page-header-bg.jpg" }) {
     return (
         <>
             {/*Page Header Start*/}
@@ -8,7 +8,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                 <div
                 className="page-header__bg"
                 style={{
-                    backgroundImage: "url(assets/images/backgrounds/page-header-bg.jpg)"
+                    backgroundImage: `url(${backgroundImage})`
                 }}
                 ></div>
                 <div className="container">

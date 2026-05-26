@@ -2308,9 +2308,9 @@ ul {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  border-radius: 10px;
+  border-radius: 50%;
   border: 2px solid transparent;
-  background: linear-gradient(180deg, #B20D5D, rgba(140, 30, 13, .33)) border-box;
+  background: linear-gradient(180deg, #e076ff, rgba(0, 240, 255, .4)) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -12421,3 +12421,165 @@ ul {
 
 
 }
+
+/* Custom Responsive Logo Styling */
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-logo-img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e076ff;
+  box-shadow: 0 0 15px rgba(224, 118, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.nav-logo-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: var(--eventflow-font, sans-serif);
+  transition: all 0.3s ease;
+}
+
+/* Sticky Header logo size */
+.stricky-fixed .nav-logo-img {
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 0 10px rgba(224, 118, 255, 0.4);
+}
+
+.stricky-fixed .nav-logo-text {
+  font-size: 18px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991px) {
+  .nav-logo-img {
+    height: 55px;
+    width: 55px;
+  }
+  .nav-logo-text {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  .main-menu__wrapper-inner {
+    padding: 10px 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo-img {
+    height: 45px;
+    width: 45px;
+  }
+  .nav-logo-text {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+/* Mobile Nav Drawer Logo Custom Styles */
+.mobile-nav-logo-img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #e076ff;
+  box-shadow: 0 0 10px rgba(224, 118, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.mobile-nav-logo-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 380px) {
+  .mobile-nav-logo-img {
+    height: 45px;
+    width: 45px;
+  }
+  .mobile-nav-logo-text {
+    font-size: 16px;
+  }
+}
+
+/* Responsive Hero Title for Banner Sections */
+.responsive-hero-title {
+  font-size: 70px !important;
+  line-height: 1.1 !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+  .responsive-hero-title {
+    font-size: 60px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .responsive-hero-title {
+    font-size: 48px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-hero-title {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .responsive-hero-title {
+    font-size: 26px !important;
+  }
+}
+
+/* Responsive Countdown Timer for Event Page Banner */
+@media (max-width: 576px) {
+  .banner-one__countdown-timer-box .time-countdown-two {
+    max-width: 260px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+  .banner-one__countdown-timer-box .time-countdown-two li,
+  .banner-one__countdown-timer-box .time-countdown-two > div {
+    flex: 0 0 calc(50% - 10px) !important;
+    max-width: calc(50% - 10px) !important;
+    margin: 0 !important;
+  }
+  .banner-one__countdown-timer-box .box {
+    height: 95px !important;
+    width: 95px !important;
+  }
+  .banner-one__countdown-timer-box span.days,
+  .banner-one__countdown-timer-box span.hours,
+  .banner-one__countdown-timer-box span.minutes,
+  .banner-one__countdown-timer-box span.seconds {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+  .banner-one__countdown-timer-box span.timeRef {
+    font-size: 12px !important;
+    line-height: 12px !important;
+  }
+}
+
+
+

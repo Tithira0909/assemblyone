@@ -1,21 +1,27 @@
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
+
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
     return (
 
       <header className={`main-header main-header-three ${scroll ? "fixed-header" : ""}`}>
         <nav className="main-menu main-menu-three">
           <div className="main-menu__wrapper">
-              <div className="main-menu__wrapper-inner">
+              <div className="main-menu__wrapper-inner" style={{ padding: '15px 60px' }}>
                 <div className="main-menu__left">
-                  <div className="main-menu__logo">
+                  <div className="main-menu__logo" style={{ padding: '5px 0' }}>
                     <Link href="/">
-                        <img src="/assets/images/resources/logo-1.png" alt="Logo" />
+                        <div className="nav-logo-container">
+                            <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" className="nav-logo-img" />
+                            <span className="nav-logo-text">
+                                Assembly <span style={{ color: '#00f0ff' }}>One</span>
+                            </span>
+                        </div>
                     </Link>
                   </div>
                 </div>
-                <div className="main-menu__right">
+                <div className="main-menu__right" style={{ padding: '5px 0' }}>
                   <div className="main-menu__main-menu-box">
                     <div className="mobile-nav__toggler" onClick={handleMobileMenu}>
                       <i className="fa fa-bars" />
@@ -23,9 +29,9 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                     <Menu />
                   </div>
                   <div className="main-menu__btn-box">
-                      <Link href="/contact" className="main-menu__btn thm-btn">Buy Ticket <span
-                              className="icon-arrow-right"></span> 
-                      </Link>
+                      <a href="https://ticketz.lk" target="_blank" rel="noopener noreferrer" className="main-menu__btn thm-btn" style={{ padding: '12px 25px' }}>
+                          Book Tickets <span className="icon-arrow-right"></span> 
+                      </a>
                   </div>
                 </div>
               </div>
@@ -36,15 +42,20 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
         <div className="sticky-header__content" />
           <nav className="main-menu main-menu-three">
             <div className="main-menu__wrapper">
-                <div className="main-menu__wrapper-inner">
+                <div className="main-menu__wrapper-inner" style={{ padding: '10px 60px' }}>
                   <div className="main-menu__left">
-                    <div className="main-menu__logo">
+                    <div className="main-menu__logo" style={{ padding: '5px 0' }}>
                       <Link href="/">
-                          <img src="/assets/images/resources/logo-1.png" alt="Logo" />
+                          <div className="nav-logo-container">
+                              <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" className="nav-logo-img" />
+                              <span className="nav-logo-text">
+                                  Assembly <span style={{ color: '#00f0ff' }}>One</span>
+                              </span>
+                          </div>
                       </Link>
                     </div>
                   </div>
-                  <div className="main-menu__right">
+                  <div className="main-menu__right" style={{ padding: '5px 0' }}>
                     <div className="main-menu__main-menu-box">
                       <div className="mobile-nav__toggler" onClick={handleMobileMenu}>
                         <i className="fa fa-bars" />
@@ -52,9 +63,9 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                       <Menu />
                     </div>
                     <div className="main-menu__btn-box">
-                        <Link href="/contact" className="main-menu__btn thm-btn">Buy Ticket <span
-                                className="icon-arrow-right"></span> 
-                        </Link>
+                        <a href="https://ticketz.lk" target="_blank" rel="noopener noreferrer" className="main-menu__btn thm-btn" style={{ padding: '10px 20px' }}>
+                            Book Tickets <span className="icon-arrow-right"></span> 
+                        </a>
                     </div>
                   </div>
                 </div>

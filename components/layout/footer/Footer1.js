@@ -13,14 +13,27 @@ export default function Footer1() {
                         <div className="site-footer__top-inner">
                             <div className="site-footer__logo">
                                 <Link href="/">
-                                    <img src="/assets/images/resources/site-footer-logo-1.png" alt="" />
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                                        <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" 
+                                            style={{ 
+                                                height: '65px', 
+                                                width: '65px', 
+                                                objectFit: 'cover', 
+                                                borderRadius: '50%', 
+                                                border: '2px solid #e076ff', 
+                                                boxShadow: '0 0 15px rgba(224, 118, 255, 0.5)' 
+                                            }} 
+                                        />
+                                        <span style={{ color: '#fff', fontSize: '22px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase' }}>
+                                            Assembly <span style={{ color: '#00f0ff' }}>One</span>
+                                        </span>
+                                    </div>
                                 </Link>
                             </div>
                             <div className="site-footer__social">
-                                <Link href="#"><i className="icon-facebook"></i></Link>
-                                <Link href="#"><i className="icon-fi"></i></Link>
-                                <Link href="#"><i className="icon-instagram"></i></Link>
-                                <Link href="#"><i className="icon-pinterest"></i></Link>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
@@ -35,9 +48,9 @@ export default function Footer1() {
                                             <h3 className="footer-widget__title">Quick links</h3>
                                         </div>
                                         <ul className="footer-widget__link-list list-unstyled">
-                                            <li><Link href="/about">About Us</Link></li>
-                                            <li><Link href="/services">Service</Link></li>
-                                            <li><Link href="/contact">Online Ticket</Link></li>
+                                            <li><Link href="/">Home</Link></li>
+                                            <li><Link href="/services">Services</Link></li>
+                                            <li><Link href="/event">Rawaya Live Concert</Link></li>
                                             <li><Link href="/contact">Contact Us</Link></li>
                                         </ul>
                                     </div>
@@ -54,7 +67,7 @@ export default function Footer1() {
                                                         <span className="icon-envelop"></span>
                                                     </div>
                                                     <div className="text">
-                                                        <p><a href="mailto:nafiz125@gmail.com">nafiz125@gmail.com</a></p>
+                                                        <p><a href="mailto:info@assemblyone.lk">info@assemblyone.lk</a></p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -62,7 +75,7 @@ export default function Footer1() {
                                                         <span className="icon-pin"></span>
                                                     </div>
                                                     <div className="text">
-                                                        <p>3891 Ranchview Dr. Richardson</p>
+                                                        <p>Maharagama, Sri Lanka</p>
                                                     </div>
                                                 </li>
                                                 <li>
@@ -70,7 +83,10 @@ export default function Footer1() {
                                                         <span className="icon-call"></span>
                                                     </div>
                                                     <div className="text">
-                                                        <p><a href="tel:01245789321">01245789321, 012457895146</a></p>
+                                                        <p>
+                                                            <a href="tel:0771232567">Tikka: 0771232567</a><br />
+                                                            <a href="tel:0712222222">Senal: 0712222222</a>
+                                                        </p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -84,11 +100,11 @@ export default function Footer1() {
                 <div className="site-footer__bottom">
                     <div className="container">
                         <div className="site-footer__bottom-inner">
-                            <p className="site-footer__bottom-text">© EventFlow 2024 | All Rights Reserved</p>
+                            <p className="site-footer__bottom-text">© Assembly One 2026 | All Rights Reserved</p>
                             <ul className="list-unstyled site-footer__bottom-menu">
-                                <li><Link href="/about">Terms & Condition</Link></li>
-                                <li><Link href="/about">Privacy Policy</Link></li>
-                                <li><Link href="/about">Contact Us</Link></li>
+                                <li><Link href="/#">Terms & Condition</Link></li>
+                                <li><Link href="/#">Privacy Policy</Link></li>
+                                <li><Link href="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                     </div>
