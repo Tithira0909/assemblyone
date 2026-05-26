@@ -150,20 +150,14 @@ export default function ScheduleThree() {
                 </div>
                 <div className="schedule-three__bottom" style={{ marginTop: '50px' }}>
                     {scheduleData.map((event) => (
-                        <div key={event.id} className="schedule-three__routine-details wow fadeInLeft" data-wow-delay={event.delay} style={{ borderBottom: '1px solid rgba(224, 118, 255, 0.1)', padding: '30px 0' }}>
+                        <div key={event.id} className="schedule-three__routine-details wow fadeInLeft" data-wow-delay={event.delay} style={{ borderBottom: '1px solid rgba(224, 118, 255, 0.1)', padding: '30px 0', gridTemplateColumns: '78% 22%' }}>
                             <div className="schedule-three__routine-details-description">
                                 <h4 className="schedule-three__routine-details-description-title" style={{ marginBottom: '10px' }}>
                                     <a href={event.link} style={{ color: '#fff', fontSize: '24px', fontWeight: '700' }}>{event.title}</a>
                                 </h4>
                                 <p className="schedule-three__routine-details-description-text" style={{ color: '#b9aed3', fontSize: '15px' }}>{event.description}</p>
                             </div>
-                            <div className="schedule-three__routine-details-img-box">
-                                {event.img.map((image, index) => (
-                                    <div key={index} className="schedule-three__routine-details-img-single" style={{ borderRadius: '8px', overflow: 'hidden' }}>
-                                        <img src={image} alt={`Schedule Image ${index + 1}`} style={{ filter: 'hue-rotate(50deg) saturate(1.2)' }} />
-                                    </div>
-                                ))}
-                            </div>
+
                             <div className="schedule-three__routine-time-detail" style={{ background: 'rgba(0, 240, 255, 0.05)', borderLeft: '3px solid #00f0ff', padding: '15px 25px' }}>
                                 <p style={{ color: '#00f0ff', fontWeight: 'bold', margin: 0 }}>{event.time}</p>
                                 <h6 style={{ color: '#e076ff', margin: '5px 0 0' }}>{event.subTitle}</h6>
