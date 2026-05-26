@@ -12,8 +12,8 @@ export default function BuyTicket() {
       "Join us for Sri Lanka's most anticipated live concert event of the year, produced by Assembly One. Enjoy a stellar multi-genre lineup, premium stage acoustics, laser lighting, secure crowd control, ample parking, and an outstanding food & beverage experience.",
     buttons: [
       { id: 1, text: "Buy Online (Ticketz.lk)", link: "https://ticketz.lk", target: "_blank", class: "buy-ticket__btn-1" },
-      { id: 2, text: "Tikka: 0771232567", link: "tel:0771232567", target: "_self", class: "buy-ticket__btn-2" },
-      { id: 3, text: "Senal: 0712222222", link: "tel:0712222222", target: "_self", class: "buy-ticket__btn-2" },
+      { id: 2, text: "Hotline: 0773366324", link: "tel:0773366324", target: "_self", class: "buy-ticket__btn-2" },
+      { id: 3, text: "Chamindu: 0773366019", link: "tel:0773366019", target: "_self", class: "buy-ticket__btn-2" },
     ],
     ticketImage: "/assets/images/assembly/media_7.jpg",
   });

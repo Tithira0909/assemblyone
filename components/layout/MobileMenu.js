@@ -63,11 +63,11 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             </li>
             <li>
               <i className="fa fa-phone-alt" />
-              <a href="tel:0771232567">Tikka: 0771232567</a>
+              <a href="tel:0773366324">Hotline: 0773366324</a>
             </li>
             <li>
               <i className="fa fa-phone-alt" />
-              <a href="tel:0712222222">Tikka: 0712222222</a>
+              <a href="tel:0773366019">Chamindu: 0773366019</a>
             </li>
           </ul>
           {/* /.mobile-nav__contact */}

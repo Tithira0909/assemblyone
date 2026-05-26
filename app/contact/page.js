@@ -133,10 +133,10 @@ export default function Contact() {
                     </div>
                     <h3 className="contact-two__title" style={{ color: '#fff', fontSize: '22px', fontWeight: '700', marginBottom: '15px' }}>Hotlines</h3>
                     <p className="contact-two__text" style={{ color: '#b9aed3', margin: 0 }}>
-                      <a href="tel:0771232567" style={{ color: '#e076ff', fontWeight: '600' }}>Tikka: 0771232567</a>
+                      <a href="tel:0773366324" style={{ color: '#e076ff', fontWeight: '600' }}>Hotline: 0773366324</a>
                     </p>
                     <p className="contact-two__text" style={{ color: '#b9aed3', margin: 0 }}>
-                      <a href="tel:0712222222" style={{ color: '#e076ff', fontWeight: '600' }}>Tikka: 0712222222</a>
+                      <a href="tel:0773366019" style={{ color: '#e076ff', fontWeight: '600' }}>Chamindu: 0773366019</a>
                     </p>
                   </div>
                 </div>
