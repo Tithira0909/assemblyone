@@ -102,8 +102,7 @@ export default function Contact() {
                     </div>
                     <h3 className="contact-two__title" style={{ color: '#fff', fontSize: '22px', fontWeight: '700', marginBottom: '15px' }}>Location</h3>
                     <p className="contact-two__text" style={{ color: '#b9aed3' }}>
-                      Waters Edge, Nature in the Heart of the City, <br />
-                      Colombo, Sri Lanka
+                      Maharagama, <br /> Sri Lanka
                     </p>
                   </div>
                 </div>
