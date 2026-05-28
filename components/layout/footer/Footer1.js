@@ -84,8 +84,8 @@ export default function Footer1() {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="tel:0771232567">Tikka: 0771232567</a><br />
-                                                            <a href="tel:0712222222">Senal: 0712222222</a>
+                                                            <a href="tel:0773366324">Hotline: 0773366324</a><br />
+                                                            <a href="tel:0773366019">Chamindu: 0773366019</a>
                                                         </p>
                                                     </div>
                                                 </li>
