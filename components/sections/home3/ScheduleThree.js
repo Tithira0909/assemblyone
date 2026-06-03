@@ -98,7 +98,7 @@ const scheduleData = [
         id: 7,
         date: '10:15 PM',
         day: 'SOULFUL VOCALS',
-        title: 'Romaine Willis',
+        title: 'Kanchana Anuradhi',
         description: 'Experience beautiful, soulful vocals and an enchanting stage presence that captivates every corner of the arena.',
         time: '10:15 PM - 11:00 PM',
         subTitle: 'Vocal Performance',

@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout"
 import CompanyBanner from "@/components/sections/CompanyBanner"
 import EventOne from "@/components/common/EventOne"
 import FeatureOne from "@/components/sections/home3/FeatureOne"
-import Testimonial from "@/components/sections/home2/Testimonial"
+// import Testimonial from "@/components/sections/home2/Testimonial"
 
 export default function Home() {
     const aboutPoints = [
@@ -39,9 +39,9 @@ export default function Home() {
                     <FeatureOne />
                 </div>
 
-                <div id="testimonials">
+                {/* <div id="testimonials">
                     <Testimonial />
-                </div>
+                </div> */}
             </Layout>
         </>
     )
