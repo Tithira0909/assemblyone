@@ -14,7 +14,7 @@ export default function Footer1() {
                             <div className="site-footer__logo">
                                 <Link href="/">
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                                        <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" 
+                                        <img src="/assets/images/assembly/logo_icon.jpg" alt="Assembly One Logo" 
                                             style={{ 
                                                 height: '65px', 
                                                 width: '65px', 
@@ -24,9 +24,10 @@ export default function Footer1() {
                                                 boxShadow: '0 0 15px rgba(224, 118, 255, 0.5)' 
                                             }} 
                                         />
-                                        <span style={{ color: '#fff', fontSize: '22px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase' }}>
+                                        {/* <span style={{ color: '#fff', fontSize: '22px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase' }}>
                                             Assembly <span style={{ color: '#00f0ff' }}>One</span>
-                                        </span>
+                                        </span> */}
+                                        <img src="/assets/images/assembly/logo_text.png" alt="Assembly One" className="nav-logo-text-img" />
                                     </div>
                                 </Link>
                             </div>
@@ -73,9 +74,6 @@ export default function Footer1() {
                                                 <li>
                                                     <div className="icon">
                                                         <span className="icon-pin"></span>
-                                                    </div>
-                                                    <div className="text">
-                                                        <p>Maharagama, Sri Lanka</p>
                                                     </div>
                                                 </li>
                                                 <li>

@@ -6,18 +6,18 @@ import UpcomingEventHero from "@/components/sections/UpcomingEventHero"
 // import Testimonial from "@/components/sections/home2/Testimonial"
 
 export default function Home() {
-    const aboutPoints = [
-      {
-        icon: "icon-air-horn",
-        heading: "Expert Event Production",
-        description: "From massive live concerts to exclusive corporate events, we manage all technical and creative aspects flawlessly."
-      },
-      {
-        icon: "icon-party-blower",
-        heading: "State-of-the-art Technology",
-        description: "We utilize world-class L-Acoustics sound rigs and immersive LED visual setups for uncompromised quality."
-      }
-    ];
+    // const aboutPoints = [
+    //   {
+    //     icon: "icon-air-horn",
+    //     heading: "Expert Event Production",
+    //     description: "From massive live concerts to exclusive corporate events, we manage all technical and creative aspects flawlessly."
+    //   },
+    //   {
+    //     icon: "icon-party-blower",
+    //     heading: "State-of-the-art Technology",
+    //     description: "We utilize world-class L-Acoustics sound rigs and immersive LED visual setups for uncompromised quality."
+    //   }
+    // ];
 
     return (
         <>

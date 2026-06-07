@@ -12480,6 +12480,20 @@ ul {
   transition: all 0.3s ease;
 }
 
+/* Logo text image (replaces .nav-logo-text) */
+.nav-logo-text-img {
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Mobile nav logo text image */
+.mobile-nav-logo-text-img {
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
 /* Sticky Header logo size */
 .stricky-fixed .nav-logo-img {
   height: 60px;
@@ -12490,6 +12504,8 @@ ul {
 .stricky-fixed .nav-logo-text {
   font-size: 18px;
 }
+
+.stricky-fixed .nav-logo-text-img { height: 40px; }
 
 /* Mobile responsive adjustments */
 @media (max-width: 991px) {

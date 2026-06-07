@@ -13,10 +13,8 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                   <div className="main-menu__logo" style={{ padding: '5px 0' }}>
                     <Link href="/">
                         <div className="nav-logo-container">
-                            <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" className="nav-logo-img" />
-                            <span className="nav-logo-text">
-                                Assembly <span style={{ color: '#00f0ff' }}>One</span>
-                            </span>
+                            <img src="/assets/images/assembly/logo_icon.jpg" alt="Assembly One Logo" className="nav-logo-img" />
+                            <img src="/assets/images/assembly/logo_text.png" alt="Assembly One" className="nav-logo-text-img" />
                         </div>
                     </Link>
                   </div>
@@ -47,10 +45,8 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                     <div className="main-menu__logo" style={{ padding: '5px 0' }}>
                       <Link href="/">
                           <div className="nav-logo-container">
-                              <img src="/assets/images/assembly/selected_photo.jpg" alt="Assembly One Logo" className="nav-logo-img" />
-                              <span className="nav-logo-text">
-                                  Assembly <span style={{ color: '#00f0ff' }}>One</span>
-                              </span>
+                                <img src="/assets/images/assembly/logo_icon.jpg" alt="Assembly One Logo" className="nav-logo-img" />
+                                <img src="/assets/images/assembly/logo_text.png" alt="Assembly One" className="nav-logo-text-img" />
                           </div>
                       </Link>
                     </div>

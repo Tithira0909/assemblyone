@@ -23,9 +23,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <Link href="/" aria-label="logo image" onClick={handleMobileMenu}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <img src="/assets/images/assembly/selected_photo.jpg" alt="Logo" className="mobile-nav-logo-img" />
-                <span className="mobile-nav-logo-text">
-                  Assembly <span style={{ color: '#00f0ff' }}>One</span>
-                </span>
+                <img src="/assets/images/assembly/logo_text.png" alt="Assembly One" className="mobile-nav-logo-text-img" />
               </div>
             </Link>
           </div>
