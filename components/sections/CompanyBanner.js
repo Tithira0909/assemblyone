@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function CompanyBanner() {
     return (
         <section className="banner-one" style={{ position: 'relative', overflow: 'hidden' }}>
-            <div className="banner-one__bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
+            <div className="banner-one__bg jarallax" data-jarallax data-speed="0.4" data-imgposition="50% 0%"
                 style={{ 
                     backgroundImage: 'url(/assets/images/assembly/assembly-cover.png)',
                     backgroundSize: 'cover',
@@ -30,7 +30,7 @@ export default function CompanyBanner() {
 
                     <h2 className="banner-one__title responsive-hero-title wow fadeInUp" data-wow-delay="100ms">
                         CRAFTING <br />
-                        <span style={{ color: '#e076ff' }}>UNFORGETTABLE</span> <br />
+                        <span style={{ color: '#f476ff' }}>UNFORGETTABLE</span> <br />
                         EXPERIENCES
                     </h2>
                     
