@@ -2320,9 +2320,23 @@ ul {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  animation: countdownBoxGlow 1.5s ease-in-out infinite;
   visibility: visible;
   opacity: 1;
   z-index: -1;
+}
+
+@keyframes countdownBoxGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(224, 118, 255, 0.55));
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 20px rgba(224, 118, 255, 0.9));
+  }
 }
 
 .banner-one__countdown-timer-box span.days,
@@ -12438,6 +12452,18 @@ ul {
   border: 2px solid #e076ff;
   box-shadow: 0 0 15px rgba(224, 118, 255, 0.5);
   transition: all 0.3s ease;
+  animation: navLogoGlow 6s ease-in-out infinite;
+}
+
+@keyframes navLogoGlow {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(224, 118, 255, 0.45), 0 0 0 0 rgba(224, 118, 255, 0.1);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(224, 118, 255, 0.85), 0 0 35px rgba(224, 118, 255, 0.25);
+    transform: scale(1.04);
+  }
 }
 
 .nav-logo-text {
@@ -12582,4 +12608,4 @@ ul {
 }
 
 
-
+
