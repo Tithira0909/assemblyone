@@ -30,28 +30,28 @@ const featuresData = [
     },
     {
         id: 4,
-        title: 'Elite Stage Trussing & Rigging',
-        description: 'Highly secure rigging solutions, modern stages, and custom scaffold setups adhering to safety codes.',
-        icon: 'fas fa-shield-alt',
+        title: 'Full Venue Coordination & Management',
+        description: 'Expert event floor planning, crowd logistics, secure environments, and partner venue coordination.',
+        icon: 'fas fa-calendar-check',
         link: '#event',
         delay: '400ms',
     },
     {
         id: 5,
-        title: 'A-List Talent & Artist Management',
-        description: 'Direct collaboration and booking management for premier local and international stars.',
-        icon: 'fas fa-users',
+        title: 'Corporate & Private Event Production',
+        description: 'Tailored event production for corporate functions, product launches, and private celebrations.',
+        icon: 'fas fa-briefcase',
         link: '#event',
         delay: '500ms',
     },
     {
         id: 6,
-        title: 'Full Venue Coordination & Management',
-        description: 'Expert floor planning, crowd logistics, secure environments, and partner venue coordination.',
-        icon: 'fas fa-calendar-check',
+        title: 'Creative Show Design & Theming',
+        description: 'Custom stage designs, thematic concepts, and creative direction to make every event unique.',
+        icon: 'fas fa-palette',
         link: '#event',
         delay: '600ms',
-    },
+    }
 ];
 
 export default function FeatureOne() {

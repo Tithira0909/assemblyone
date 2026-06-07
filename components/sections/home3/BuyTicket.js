@@ -14,7 +14,7 @@ export default function BuyTicket() {
       { id: 1, text: "Buy Online (Ticketz.lk)", link: "https://ticketz.lk", target: "_blank", class: "buy-ticket__btn-1" },
       { id: 2, text: "More info: 077 336 6324", link: "tel:0773366324", target: "_self", class: "buy-ticket__btn-2" }
     ],
-    ticketImage: "/assets/images/assembly/media_7.jpg",
+    ticketImage: "/assets/images/events/RawayaAtTheEdgeMain.jpeg",
   });
 
   return (

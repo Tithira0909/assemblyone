@@ -42,9 +42,6 @@ export default function CompanyBanner() {
                         <Link href="/contact" className="banner-one__btn thm-btn" style={{ padding: '15px 35px' }}>
                             Partner With Us <span className="icon-arrow-right"></span>
                         </Link>
-                        <Link href="/event" className="banner-one__btn thm-btn" style={{ padding: '15px 35px', background: 'transparent', border: '2px solid #00f0ff', color: '#fff' }}>
-                            View Upcoming Events <span className="icon-arrow-right"></span>
-                        </Link>
                     </div>
                 </div>
             </div>

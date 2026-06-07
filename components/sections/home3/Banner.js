@@ -44,7 +44,7 @@ export default function BannerOne() {
         <section className="banner-one" style={{ position: 'relative', overflow: 'hidden' }}>
             <div className="banner-one__bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%"
                 style={{ 
-                    backgroundImage: 'url(/assets/images/assembly/rawaya-cover.png)',
+                    backgroundImage: 'url(/assets/images/events/RawayaAtTheEdgeMain.jpeg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center'
                 }}>
