@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 
 // Data for the banner
 const bannerData = {
-    title: 'RAWAYA LIVE IN CONCERT',
+    title: 'RAWAYA AT THE EDGE',
+    title2: 'LIVE IN CONCERT',
     subtitle: 'ASSEMBLY ONE PRESENTS',
     date: 'August 01, 2026 | 7:00 PM Onwards',
     address: 'Waters Edge - Nature in the Heart of the City',

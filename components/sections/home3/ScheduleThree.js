@@ -7,22 +7,6 @@ import { Autoplay, Pagination } from 'swiper/modules';
 // Data for schedule (Rawaya Concert Lineup on August 1st, 2026)
 const scheduleData = [
     {
-        id: 1,
-        date: '07:00 PM',
-        day: 'DOORS OPEN',
-        title: 'Gate Entry',
-        description: 'Get checked-in, grab refreshments, and find your seats or tables. Enjoy the ambient atmosphere as the venue opens.',
-        time: '7:00 PM - 7:30 PM',
-        subTitle: 'Doors & Welcome',
-        artistImg: '/assets/images/backgrounds/Event.jpg',
-        img: [
-            '/assets/images/resources/schedule-three-routine-details-img-1-1.jpg',
-            '/assets/images/resources/schedule-three-routine-details-img-1-2.jpg',
-        ],
-        link: '#event',
-        delay: '100ms',
-    },
-    {
         id: 2,
         date: '07:30 PM',
         day: 'OPENING ACT',
@@ -139,9 +123,9 @@ const scheduleData = [
 
 export default function ScheduleThree() {
     return (
-        <section className="schedule-three" style={{ background: '#0e081f', padding: '120px 0 120px' }}>
+        <section className="schedule-three" style={{ background: '#0e081f', padding: '60px 0 120px' }}>
             <div className="container">
-                <div className="schedule-three__top" style={{ borderBottom: '1px solid rgba(224, 118, 255, 0.15)', paddingBottom: '30px' }}>
+                {/* <div className="schedule-three__top" style={{ borderBottom: '1px solid rgba(224, 118, 255, 0.15)', paddingBottom: '30px' }}>
                     <div className="section-title text-left">
                         <div className="section-title__tagline-box">
                             <span className="section-title__tagline" style={{ color: '#00f0ff' }}>RAWAYA TIMELINE</span>
@@ -158,12 +142,18 @@ export default function ScheduleThree() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
-                <div className="artist-slider-section" style={{ marginTop: '50px' }}>
+                <div className="artist-slider-section" style={{ marginTop: '10px' }}>
+                    <div className="section-title text-left">
+                        <div className="section-title__tagline-box">
+                            <span className="section-title__tagline" style={{ color: '#00f0ff' }}>Featuring</span>
+                        </div>
+                        <h2 className="section-title__title" style={{ color: '#fff' }}>ARTISTS</h2>
+                    </div>
                     <Swiper
                         className="artist-swiper"
-                        modules={[Autoplay, Pagination, Navigation]}
+                        modules={[Autoplay, Pagination]}
                         spaceBetween={20}
                         slidesPerView={3}
                         centeredSlides={true}

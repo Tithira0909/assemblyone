@@ -11,13 +11,13 @@ export default function EventPage() {
                 <div id="event-home">
                     <Banner />
                 </div>
-                
-                <div id="timeline">
-                    <ScheduleThree />
-                </div>
 
                 <div id="booking">
                     <BuyTicket />
+                </div>
+                
+                <div id="timeline">
+                    <ScheduleThree />
                 </div>
 
                 <div id="pricing">
