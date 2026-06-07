@@ -2,8 +2,46 @@
 
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Contact() {
+  const [statusMessage, setStatusMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatusMessage("");
+    setSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Unable to send inquiry. Please try again.");
+      }
+
+      setStatusMessage("Your inquiry has been sent. We will contact you soon.");
+      form.reset();
+    } catch (error) {
+      console.error(error);
+      setStatusMessage(error.message || "Unable to send inquiry. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <>
       <Layout headerStyle={3} footerStyle={1} breadcrumbTitle="CONTACT US">
@@ -18,7 +56,7 @@ export default function Contact() {
                 </p>
                 <form
                   className="contact-form-validated contact-one__form"
-                  onSubmit={(e) => e.preventDefault()}
+                  onSubmit={handleSubmit}
                   noValidate
                 >
                   <div className="row">
@@ -48,15 +86,30 @@ export default function Contact() {
                           type="text"
                           name="phone"
                           placeholder="Phone Number"
-                          required
                         />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="contact-one__input-box">
                         <div className="select-box">
-                          <select className="selectmenu wide" defaultValue="Choose Option" style={{ background: '#140c26', color: '#fff', border: '1px solid rgba(224, 118, 255, 0.15)', width: '100%', height: '60px', padding: '0 20px', borderRadius: '8px' }}>
-                            <option value="Choose Option">Select Inquired Subject</option>
+                          <select
+                            name="subject"
+                            className="selectmenu wide"
+                            defaultValue=""
+                            required
+                            style={{
+                              background: '#140c26',
+                              color: '#fff',
+                              border: '1px solid rgba(224, 118, 255, 0.15)',
+                              width: '100%',
+                              height: '60px',
+                              padding: '0 20px',
+                              borderRadius: '8px',
+                            }}
+                          >
+                            <option value="" disabled>
+                              Select Inquired Subject
+                            </option>
                             <option value="Ticket Booking">Rawaya Ticket Booking</option>
                             <option value="Event Production">Concert/Live Show Production</option>
                             <option value="Stage/Truss Hire">Stage, Audio & Lighting Rig Hire</option>
@@ -68,23 +121,17 @@ export default function Contact() {
                     </div>
                     <div className="col-xl-12">
                       <div className="contact-one__input-box text-message-box">
-                        <textarea
-                          name="message"
-                          placeholder="Your Message"
-                        ></textarea>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                       </div>
                       <div className="contact-one__btn-box">
-                        <button
-                          type="submit"
-                          className="thm-btn contact-one__btn"
-                        >
-                          Submit Now<span className="icon-arrow-right"></span>
+                        <button type="submit" className="thm-btn contact-one__btn" disabled={submitting}>
+                          {submitting ? 'Sending...' : 'Submit Now'}<span className="icon-arrow-right"></span>
                         </button>
                       </div>
                     </div>
                   </div>
                 </form>
-                <div className="result"></div>
+                <div className="result">{statusMessage}</div>
               </div>
             </div>
           </section>
