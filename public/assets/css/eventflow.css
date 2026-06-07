@@ -12641,5 +12641,81 @@ ul {
 .artist-slider-section .swiper-slide-next .artist-slide-card .artist-slide-image { transform: scale(1.02); }
 .artist-slider-section .swiper-wrapper { padding-bottom: 44px; }
 
+/* Upcoming event showcase */
+.upcoming-event-section { background: #090412; }
+.upcoming-event-section .section-title__tagline { letter-spacing: 2px; }
+.upcoming-event-cards { display: flex; position: relative; overflow: hidden; padding-right: 140px; }
+.upcoming-event-card { background: rgba(20, 11, 38, 0.95); border: 1px solid rgba(224, 118, 255, 0.12); border-radius: 30px; height: 520px; min-height: 520px; display: flex; align-items: stretch; overflow: hidden; box-shadow: 0 32px 90px rgba(0, 0, 0, 0.28); }
+.upcoming-event-card--active { width: calc(100% - 200px); z-index: 2; position: relative; }
+.upcoming-event-card--preview { position: absolute; top: 30px; right: 0; width: 200px; flex-shrink: 0; opacity: 0.95; transform: scale(0.96); margin-left: 0; border-radius: 24px; }
+.upcoming-event-card__content { flex: 1 1 55%; padding: 44px 40px; display: flex; flex-direction: column; justify-content: space-between; }
+.upcoming-event-card__image-wrap { flex: 1 1 45%; position: relative; }
+.upcoming-event-poster { width: 100%; height: 100%; object-fit: cover; border-radius: 0 0 0 0; border: none; }
+.upcoming-event-card--active .upcoming-event-poster { border-radius: 0 0 0 0; }
+.upcoming-event-card--preview .upcoming-event-card__content { padding: 24px 18px; }
+.upcoming-event-card--preview .upcoming-event-poster { height: 100%; object-fit: cover; }
+.upcoming-event-badge { display: inline-block; color: #fff; background: rgba(0, 240, 255, 0.1); border: 1px solid rgba(0, 240, 255, 0.18); border-radius: 999px; padding: 10px 18px; font-size: 12px; letter-spacing: 1px; margin-bottom: 24px; }
+.upcoming-event-title { color: #fff; font-size: 42px; font-weight: 800; line-height: 1.05; margin-bottom: 20px; }
+.upcoming-event-title--small { font-size: 24px; margin-bottom: 14px; }
+.upcoming-event-meta { color: #b2a6c9; font-size: 15px; margin-bottom: 18px; }
+.upcoming-event-description { color: #c1b6d9; font-size: 16px; line-height: 1.9; margin-bottom: 30px; }
+.upcoming-event-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+.upcoming-event-label { display: block; color: #00f0ff; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; margin-bottom: 8px; }
+.upcoming-event-small { color: #9b8db9; margin: 0; }
+.upcoming-event-card--preview .upcoming-event-badge { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.08); }
+.upcoming-event-card--preview .upcoming-event-title { font-size: 20px; }
+.upcoming-event-card--preview .upcoming-event-description { display: none; }
+.upcoming-event-card--preview .upcoming-event-footer { display: none; }
+@media (max-width: 1199px) {
+  .upcoming-event-card--active { width: 100%; margin-right: 0; }
+  .upcoming-event-card--preview { display: none; }
+  .upcoming-event-title { font-size: 34px; }
+}
+@media (max-width: 991px) {
+  .upcoming-event-card { flex-direction: column; }
+  .upcoming-event-card__content { padding: 30px; }
+  .upcoming-event-card__image-wrap { padding: 0 30px 30px; }
+}
+@media (max-width: 767px) {
+  .upcoming-event-card { min-height: auto; }
+  .upcoming-event-footer { flex-direction: column; }
+  .upcoming-event-title { font-size: 30px; }
+  .upcoming-event-cards { padding-right: 0; }
+}
+
+/* Upcoming Event Hero Layout */
+.upcoming-hero-layout { display: grid; grid-template-columns: minmax(620px, 1.7fr) minmax(320px, 1fr); gap: 32px; align-items: stretch; }
+.hero-artist-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 30px; padding: 24px; display: grid; grid-template-rows: auto 1fr; gap: 20px; min-width: 320px; height: 520px; }
+.hero-artist-panel__header { display: flex; flex-direction: column; gap: 10px; }
+.hero-artist-panel__text { color: #b9aed3; margin: 0; line-height: 1.7; }
+.hero-artist-swiper { width: 100%; height: 100%; }
+.artist-card.hero-artist-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 24px; display: flex; gap: 18px; padding: 18px; align-items: center; min-height: 120px; }
+.artist-card__thumb { width: 70px; height: 70px; flex-shrink: 0; border-radius: 18px; overflow: hidden; }
+.artist-card__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.artist-card__info h4 { margin: 0 0 6px; color: #fff; font-size: 18px; }
+.artist-card__info p { margin: 0; color: #b9aed3; font-size: 14px; }
+.hero-main-event-card { background: rgba(20, 11, 38, 0.95); border: 1px solid rgba(224, 118, 255, 0.14); border-radius: 30px; display: grid; grid-template-columns: 1.15fr 0.85fr; overflow: hidden; height: 520px; box-shadow: 0 32px 90px rgba(0, 0, 0, 0.28); }
+.hero-main-event-poster { height: 100%; overflow: hidden; }
+.hero-main-event-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-main-event-details { padding: 42px 42px 34px; display: flex; flex-direction: column; justify-content: center; gap: 18px; overflow: hidden; }
+.upcoming-event-badge { display: inline-flex; align-items: center; color: #fff; background: rgba(0, 240, 255, 0.12); border: 1px solid rgba(0, 240, 255, 0.18); border-radius: 999px; padding: 12px 20px; font-size: 12px; letter-spacing: 1px; margin-bottom: 8px; }
+.upcoming-event-title { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.05; margin: 0; }
+.upcoming-event-meta { color: #b2a6c9; font-size: 16px; margin: 0; }
+.upcoming-event-description { color: #c1b6d9; font-size: 16px; line-height: 1.85; margin-top: 20px; max-width: 520px; }
+.banner-one__btn.thm-btn { margin-top: 24px; }
+@media (max-width: 1199px) {
+  .upcoming-hero-layout { grid-template-columns: 1fr; }
+  .hero-main-event-card { grid-template-columns: 1fr; min-height: auto; }
+  .hero-main-event-poster { min-height: 340px; }
+  .hero-main-event-details { padding: 32px; }
+  .upcoming-event-title { font-size: 36px; }
+}
+@media (max-width: 767px) {
+  .hero-artist-panel { padding: 18px; }
+  .artist-card.hero-artist-card { min-height: 100px; }
+  .hero-main-event-details { padding: 24px; }
+  .upcoming-event-title { font-size: 30px; }
+}
+
 
 

@@ -1,7 +1,8 @@
 import Layout from "@/components/layout/Layout"
 import CompanyBanner from "@/components/sections/CompanyBanner"
-import EventOne from "@/components/common/EventOne"
-import FeatureOne from "@/components/sections/home3/FeatureOne"
+import UpcomingEventHero from "@/components/sections/UpcomingEventHero"
+// import EventOne from "@/components/common/EventOne"
+// import FeatureOne from "@/components/sections/home3/FeatureOne"
 // import Testimonial from "@/components/sections/home2/Testimonial"
 
 export default function Home() {
@@ -25,7 +26,11 @@ export default function Home() {
                     <CompanyBanner />
                 </div>
                 
-                <div id="about" style={{ background: '#0b0518', padding: '120px 0 0' }}>
+                <div id="upcoming-events">
+                    <UpcomingEventHero />
+                </div>
+
+                {/* <div id="about" style={{ background: '#0b0518', padding: '120px 0 0' }}>
                     <EventOne
                         tagline="WHO WE ARE"
                         title="SRI LANKA'S PREMIER EVENT PRODUCTION HOUSE"
@@ -33,11 +38,11 @@ export default function Home() {
                         points={aboutPoints}
                         imageUrl="/assets/images/assembly/media_6.jpg" // Using a cool event image
                     />
-                </div>
+                </div> */}
 
-                <div id="services">
+                {/* <div id="services">
                     <FeatureOne />
-                </div>
+                </div> */}
 
                 {/* <div id="testimonials">
                     <Testimonial />
