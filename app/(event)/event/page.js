@@ -1,8 +1,8 @@
 import Layout from "@/components/layout/Layout"
-import Banner from "@/components/sections/home3/Banner"
-import ScheduleThree from "@/components/sections/home3/ScheduleThree"
-import BuyTicket from "@/components/sections/home3/BuyTicket"
-import TicketOne from "@/components/sections/home3/TicketOne "
+import Banner from "@/components/sections/RawayaBanner"
+import ArtistSlider from "@/components/sections/ArtistSlider"
+import EventMainPoster from "@/components/sections/EventMainPoster"
+import TicketPricing from "@/components/sections/TicketPricing"
 
 export default function EventPage() {
     return (
@@ -12,16 +12,16 @@ export default function EventPage() {
                     <Banner />
                 </div>
 
-                <div id="booking">
-                    <BuyTicket />
+                <div id="main-poster">
+                    <EventMainPoster />
                 </div>
                 
-                <div id="timeline">
-                    <ScheduleThree />
+                <div id="artist-slider">
+                    <ArtistSlider />
                 </div>
 
                 <div id="pricing">
-                    <TicketOne />
+                    <TicketPricing />
                 </div>
             </Layout>
         </>

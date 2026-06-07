@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout"
-import CompanyBanner from "@/components/sections/CompanyBanner"
-import UpcomingEventHero from "@/components/sections/UpcomingEventHero"
+import HomeMain from "@/components/sections/HomeMainBanner"
+import UpcomingEvents from "@/components/sections/UpcomingEvent"
 // import EventOne from "@/components/common/EventOne"
 // import FeatureOne from "@/components/sections/home3/FeatureOne"
 // import Testimonial from "@/components/sections/home2/Testimonial"
@@ -23,11 +23,11 @@ export default function Home() {
         <>
             <Layout headerStyle={3} footerStyle={1}>
                 <div id="home">
-                    <CompanyBanner />
+                    <HomeMain />
                 </div>
                 
                 <div id="upcoming-events">
-                    <UpcomingEventHero />
+                    <UpcomingEvents />
                 </div>
 
                 {/* <div id="about" style={{ background: '#0b0518', padding: '120px 0 0' }}>
