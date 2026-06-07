@@ -20,7 +20,7 @@ export default function Footer1() {
                                                 width: '65px', 
                                                 objectFit: 'cover', 
                                                 borderRadius: '50%', 
-                                                border: '2px solid #e076ff', 
+                                                border: '2px solid #fcf2ff', 
                                                 boxShadow: '0 0 15px rgba(224, 118, 255, 0.5)' 
                                             }} 
                                         />

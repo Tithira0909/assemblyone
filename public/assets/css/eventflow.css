@@ -236,7 +236,7 @@ ul {
   font-weight: 500;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #00f0ff 0%, #8a2be2 50%, #ff4b9b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -270,7 +270,7 @@ ul {
   text-transform: capitalize;
   letter-spacing: 1.6px;
   padding: 17px 30px 17px;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #4A0AB4 0%, #1d57d4 100%);
   border-radius: 30px;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
@@ -291,7 +291,7 @@ ul {
   height: 150%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  background: linear-gradient(90deg, #4A0AB4 0%, #B20D5D 100%);
+  background: linear-gradient(90deg, #960db2 0%, #4A0AB4 100%);
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   z-index: -1;
@@ -1887,7 +1887,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #960db2 0%, #4A0AB4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2054,7 +2054,7 @@ ul {
 }
 
 .main-slider-two__title .color-text {
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #960db2 0%, #4A0AB4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -2107,7 +2107,7 @@ ul {
   bottom: 0px;
   border-radius: 30px;
   border: 3px solid transparent;
-  background: linear-gradient(90deg, #b00d5c, #490ab3) border-box;
+  background: linear-gradient(90deg, #960db2, #4A0AB4) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -2152,7 +2152,7 @@ ul {
   bottom: 0px;
   border-radius: 250px;
   border: 6px solid transparent;
-  background: linear-gradient(180deg, #b20d5c, #490ab3) border-box;
+  background: linear-gradient(180deg, #960db2, #4A0AB4) border-box;
   -webkit-mask: linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -2248,7 +2248,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: .15;
+  opacity: .22;
   z-index: -1;
 }
 
@@ -4027,7 +4027,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #00f0ff 0%, #8a2be2 50%, #ff4b9b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -12453,7 +12453,7 @@ ul {
   width: 80px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #e076ff;
+  border: 2px solid #fcf4ff;
   box-shadow: 0 0 15px rgba(224, 118, 255, 0.5);
   transition: all 0.3s ease;
   animation: navLogoGlow 6s ease-in-out infinite;
@@ -12461,12 +12461,20 @@ ul {
 
 @keyframes navLogoGlow {
   0%, 100% {
-    box-shadow: 0 0 12px rgba(224, 118, 255, 0.45), 0 0 0 0 rgba(224, 118, 255, 0.1);
+    box-shadow: 0 0 16px rgba(0, 174, 255, 0.55), 0 0 0 0 rgba(0, 174, 255, 0.1);
     transform: scale(1);
   }
+  25% {
+    box-shadow: 0 0 22px rgba(166, 77, 255, 0.75), 0 0 0 0 rgba(166, 77, 255, 0.15);
+    transform: scale(1.02);
+  }
   50% {
-    box-shadow: 0 0 28px rgba(224, 118, 255, 0.85), 0 0 35px rgba(224, 118, 255, 0.25);
+    box-shadow: 0 0 28px rgba(215, 84, 255, 0.85), 0 0 0 0 rgba(255, 84, 195, 0.2);
     transform: scale(1.04);
+  }
+  75% {
+    box-shadow: 0 0 22px rgba(124, 77, 255, 0.75), 0 0 0 0 rgba(166, 77, 255, 0.15);
+    transform: scale(1.02);
   }
 }
 
@@ -12539,7 +12547,7 @@ ul {
   width: 60px;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #e076ff;
+  border: 2px solid #f8ebfc;
   box-shadow: 0 0 10px rgba(224, 118, 255, 0.4);
   transition: all 0.3s ease;
 }
