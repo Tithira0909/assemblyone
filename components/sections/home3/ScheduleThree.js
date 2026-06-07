@@ -1,6 +1,8 @@
 "use client";
 
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 // Data for schedule (Rawaya Concert Lineup on August 1st, 2026)
 const scheduleData = [
@@ -157,28 +159,41 @@ export default function ScheduleThree() {
                         ))}
                     </div>
                 </div>
-                <div className="schedule-three__bottom" style={{ marginTop: '50px' }}>
-                    {scheduleData.map((event) => (
-                        <div key={event.id} className="schedule-three__routine-details wow fadeInLeft" data-wow-delay={event.delay} style={{ borderBottom: '1px solid rgba(224, 118, 255, 0.1)', padding: '30px 0', gridTemplateColumns: '78% 22%' }}>
-                            <div className="schedule-three__routine-details-description">
-                                <div className="schedule-three__artist">
-                                    { /* prefer explicit artistImg, otherwise use first item from img array, otherwise default */ }
-                                    <img src={event.artistImg || (event.img && event.img[0]) || '/assets/images/resources/default-artist.jpg'} alt={event.title} />
-                                </div>
-                                <div className="schedule-three__routine-text">
-                                    <h4 className="schedule-three__routine-details-description-title" style={{ marginBottom: '10px' }}>
-                                        <a href={event.link} style={{ color: '#fff', fontSize: '24px', fontWeight: '700' }}>{event.title}</a>
-                                    </h4>
-                                    <p className="schedule-three__routine-details-description-text" style={{ color: '#b9aed3', fontSize: '15px' }}>{event.description}</p>
-                                </div>
-                            </div>
 
-                            <div className="schedule-three__routine-time-detail" style={{ background: 'rgba(0, 240, 255, 0.05)', borderLeft: '3px solid #00f0ff', padding: '15px 25px' }}>
-                                <p style={{ color: '#00f0ff', fontWeight: 'bold', margin: 0 }}>{event.time}</p>
-                                <h6 style={{ color: '#e076ff', margin: '5px 0 0' }}>{event.subTitle}</h6>
-                            </div>
-                        </div>
-                    ))}
+                <div className="artist-slider-section" style={{ marginTop: '50px' }}>
+                    <Swiper
+                        className="artist-swiper"
+                        modules={[Autoplay, Pagination, Navigation]}
+                        spaceBetween={20}
+                        slidesPerView={3}
+                        centeredSlides={true}
+                        loop={true}
+                        autoplay={{ delay: 3500, disableOnInteraction: false }}
+                        pagination={{ clickable: true }}
+                        breakpoints={{
+                            0: { slidesPerView: 1.1, centeredSlides: true },
+                            768: { slidesPerView: 2.2, centeredSlides: true },
+                            1024: { slidesPerView: 3, centeredSlides: true },
+                        }}
+                    >
+                        {scheduleData.map((event) => (
+                            <SwiperSlide key={event.id}>
+                                <div className="artist-slide-card">
+                                    <div className="artist-slide-image-wrapper">
+                                        <img
+                                            src={event.artistImg || (event.img && event.img[0]) || '/assets/images/backgrounds/Event.jpg'}
+                                            alt={event.title}
+                                            className="artist-slide-image"
+                                        />
+                                    </div>
+                                    <div className="artist-slide-content">
+                                        <p className="artist-slide-label">Artist</p>
+                                        <h3 className="artist-slide-name">{event.title}</h3>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         </section>
