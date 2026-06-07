@@ -3,62 +3,46 @@ import React from 'react';
 
 const ticketsData = [
   {
-    title: 'General Admission',
-    price: '2,000 LKR',
+    title: 'General',
+    price: '3,500 LKR',
     points: [
       'Standard Arena Access',
       'Great Music & Vibes',
       'Live Stage View',
       'Standard Gate Entry',
-      'Food & Beverage stalls',
     ],
     animationClass: 'fadeInLeft',
-    delay: 100,
-  },
-  {
-    title: 'Early Bird (PP)',
-    price: '5,000 LKR',
-    points: [
-      'Closer Standing Area',
-      'Best Value Pricing',
-      'Early Access Entry',
-      'Enhanced Sound Field',
-      'Free Assembly One Gift',
-    ],
-    animationClass: 'fadeInUp',
     delay: 200,
   },
   {
-    title: 'Gold Table',
-    price: '35,000 LKR',
+    title: 'Gold',
+    price: '6,000 LKR',
     points: [
-      'Premium Comfort & Style',
-      'Seated View for 5 Pax',
-      'Dedicated F&B Waiter',
-      '1x VIP Parking Pass',
+      'Comfort & Style',
+      'Exclusive Table (8 Pax)',
       'Fast-track Entrance',
+      'Limited Availability',
     ],
     animationClass: 'fadeInUp',
     delay: 300,
   },
   {
-    title: 'Early Bird Table',
-    price: '50,000 LKR',
+    title: 'Platinum',
+    price: '7,500 LKR',
     points: [
-      'Exclusive VIP Table (10 Pax)',
-      'Limited Availability',
       'Front Row Premium View',
-      'Complimentary Food Package',
-      '2x VIP Parking Passes',
+      'Exclusive Table (8 Pax)',
+      'Complimentary Items',
+      'Limited Availability',
     ],
     animationClass: 'fadeInRight',
-    delay: 400,
-  },
+    delay: 100,
+  }
 ];
 
 export default function TicketOne({ tickets = ticketsData }) {
   return (
-    <section className="ticket-one" style={{ background: '#0b0518', padding: '120px 0 100px' }}>
+    <section className="ticket-one" style={{ background: '#0b0518', padding: '50px 0 100px' }}>
       <div className="container">
         <div className="section-title text-center">
           <div className="section-title__tagline-box">
@@ -83,9 +67,9 @@ export default function TicketOne({ tickets = ticketsData }) {
                 borderRadius: '12px', 
                 padding: '40px 25px',
                 position: 'relative',
-                boxShadow: index === 3 ? '0 0 25px rgba(224, 118, 255, 0.25)' : 'none'
+                boxShadow: index === 2 ? '0 0 25px rgba(224, 118, 255, 0.25)' : 'none'
               }}>
-                {index === 3 && (
+                {index === 2 && (
                   <div style={{
                     position: 'absolute',
                     top: '-15px',
@@ -127,7 +111,7 @@ export default function TicketOne({ tickets = ticketsData }) {
                 </ul>
                 <div className="ticket-one__btn-box" style={{ marginTop: 'auto' }}>
                   <a href="https://ticketz.lk" target="_blank" rel="noopener noreferrer" className="ticket-one__btn thm-btn" style={{ width: '100%', textAlign: 'center' }}>
-                    Buy Online <span className="icon-arrow-right"></span>
+                    ticketz.lk <span className="icon-arrow-right" style={{ marginLeft: '8px' }}></span>
                   </a>
                 </div>
               </div>

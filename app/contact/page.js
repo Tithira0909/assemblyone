@@ -90,11 +90,11 @@ export default function Contact() {
           </section>
           {/*Contact One End*/}
 
-          {/*Contact Two Start*/}
+          {/* 
           <section className="contact-two" style={{ background: '#0e081f', padding: '100px 0' }}>
             <div className="container">
               <div className="row">
-                {/* Contact Two Single Start */}
+                
                 <div className="col-xl-4 col-lg-4">
                   <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
                     <div className="contact-two__icon" style={{ fontSize: '36px', color: '#00f0ff', marginBottom: '20px' }}>
@@ -106,9 +106,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                {/* Contact Two Single End */}
-
-                {/* Contact Two Single Start */}
+                
                 <div className="col-xl-4 col-lg-4">
                   <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
                     <div className="contact-two__icon" style={{ fontSize: '36px', color: '#e076ff', marginBottom: '20px' }}>
@@ -122,9 +120,7 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                {/* Contact Two Single End */}
-
-                {/* Contact Two Single Start */}
+                
                 <div className="col-xl-4 col-lg-4">
                   <div className="contact-two__single" style={{ background: '#140c26', border: '1px solid rgba(224, 118, 255, 0.1)', padding: '40px 30px', borderRadius: '12px', textAlign: 'center' }}>
                     <div className="contact-two__icon" style={{ fontSize: '36px', color: '#00f0ff', marginBottom: '20px' }}>
@@ -139,11 +135,11 @@ export default function Contact() {
                     </p>
                   </div>
                 </div>
-                {/* Contact Two Single End */}
+              
               </div>
             </div>
-          </section>
-          {/*Contact Two End*/}
+          </section> 
+          */}
         </div>
       </Layout>
     </>

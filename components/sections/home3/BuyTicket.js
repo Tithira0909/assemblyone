@@ -5,23 +5,22 @@ import Link from "next/link";
 
 export default function BuyTicket() {
   const [ticketContent, setTicketContent] = useState({
-    address: "Maharagama, Sri Lanka",
+    address: "Waters Edge - Nature in the Heart of the City",
     timing: "August 01, 2026 | 7:00 PM Onwards",
-    title: "Be Part of the Rawaya Concert Experience!",
+    title: "Be a part of Rawaya at the Edge Live in Concert!",
     description:
       "Join us for Sri Lanka's most anticipated live concert event of the year, produced by Assembly One. Enjoy a stellar multi-genre lineup, premium stage acoustics, laser lighting, secure crowd control, ample parking, and an outstanding food & beverage experience.",
     buttons: [
       { id: 1, text: "Buy Online (Ticketz.lk)", link: "https://ticketz.lk", target: "_blank", class: "buy-ticket__btn-1" },
-      { id: 2, text: "Hotline: 0773366324", link: "tel:0773366324", target: "_self", class: "buy-ticket__btn-2" },
-      { id: 3, text: "Chamindu: 0773366019", link: "tel:0773366019", target: "_self", class: "buy-ticket__btn-2" },
+      { id: 2, text: "More info: 077 336 6324", link: "tel:0773366324", target: "_self", class: "buy-ticket__btn-2" }
     ],
-    ticketImage: "/assets/images/assembly/media_7.jpg",
+    ticketImage: "/assets/images/events/RawayaAtTheEdgeMain.jpeg",
   });
 
   return (
     <>
       {/* Buy Ticket Start */}
-      <section className="buy-ticket" style={{ background: '#0e081f', padding: '120px 0' }}>
+      <section className="buy-ticket" style={{ background: '#0e081f', padding: '60px 0' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-6">
@@ -29,6 +28,13 @@ export default function BuyTicket() {
                 className="buy-ticket__left wow fadeInLeft"
                 data-wow-delay="100ms"
               >
+                
+                <h3 className="buy-ticket__title" style={{ color: '#fff', fontSize: '40px', lineHeight: '1.2', fontWeight: '800', marginBottom: '20px' }}>
+                  {ticketContent.title}
+                </h3>
+                <p className="buy-ticket__text" style={{ color: '#b9aed3', fontSize: '16px', lineHeight: '1.8', marginBottom: '35px' }}>
+                  {ticketContent.description}
+                </p>
                 <ul className="buy-ticket__address list-unstyled" style={{ display: 'flex', flexWrap: 'wrap', gap: '25px', alignItems: 'center', marginBottom: '30px', padding: 0 }}>
                   <li style={{ display: 'flex', alignItems: 'center' }}>
                     <div className="icon" style={{ background: 'rgba(224, 118, 255, 0.1)', color: '#00f0ff', width: '50px', height: '50px', minWidth: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: '12px' }}>
@@ -47,12 +53,6 @@ export default function BuyTicket() {
                     </div>
                   </li>
                 </ul>
-                <h3 className="buy-ticket__title" style={{ color: '#fff', fontSize: '40px', lineHeight: '1.2', fontWeight: '800', marginBottom: '20px' }}>
-                  {ticketContent.title}
-                </h3>
-                <p className="buy-ticket__text" style={{ color: '#b9aed3', fontSize: '16px', lineHeight: '1.8', marginBottom: '35px' }}>
-                  {ticketContent.description}
-                </p>
                 <div className="buy-ticket__btn-box" style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
                   {ticketContent.buttons.map((button) => (
                     <a

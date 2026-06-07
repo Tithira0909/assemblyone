@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout"
-import ServicesOne from "@/components/sections/home1/ServicesOne"
+// import ServicesOne from "@/components/sections/home1/ServicesOne"
 import FeatureOne from "@/components/sections/home3/FeatureOne"
 
 export default function ServicesPage() {
@@ -11,9 +11,9 @@ export default function ServicesPage() {
                 breadcrumbTitle="Our Services"
                 breadcrumbBg="/assets/images/backgrounds/services-page-banner.jpg"
             >
-                <div id="services-hero">
+                {/* <div id="services-hero">
                     <ServicesOne />
-                </div>
+                </div> */}
                 
                 <div id="technical-capabilities">
                     <FeatureOne />
