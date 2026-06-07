@@ -51,7 +51,7 @@ export default function Footer1() {
                                         <ul className="footer-widget__link-list list-unstyled">
                                             <li><Link href="/">Home</Link></li>
                                             <li><Link href="/services">Services</Link></li>
-                                            <li><Link href="/event">Rawaya Live Concert</Link></li>
+                                            <li><Link href="/event">Rawaya at The Edge</Link></li>
                                             <li><Link href="/contact">Contact Us</Link></li>
                                         </ul>
                                     </div>
@@ -69,11 +69,6 @@ export default function Footer1() {
                                                     </div>
                                                     <div className="text">
                                                         <p><a href="mailto:info@assemblyone.lk">info@assemblyone.lk</a></p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="icon">
-                                                        <span className="icon-pin"></span>
                                                     </div>
                                                 </li>
                                                 <li>
