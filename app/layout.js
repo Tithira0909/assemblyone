@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import { dM_Sans, inter } from "@/lib/font";
 export const metadata = {
   title: "Assembly One | Premier Event Production",
-  description: "Sri Lanka's leading event management and production house, specializing in live concerts and corporate events.",
+  description: "A Sri Lanka based event management and production house, specializing in live concerts and corporate events.",
 };
 
 export default function RootLayout({ children }) {

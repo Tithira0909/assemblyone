@@ -35,7 +35,7 @@ export default function CompanyBanner() {
                     </h2>
                     
                     <p className="wow fadeInUp" data-wow-delay="200ms" style={{ fontSize: '20px', color: '#b9aed3', fontWeight: '400', marginTop: '20px', maxWidth: '600px', lineHeight: '1.6' }}>
-                        Assembly One is Sri Lanka's leading event management and production house, specializing in large-scale live concerts, corporate events, and immersive stage productions.
+                        Assembly One is a Sri Lanka based event management and production house, specializing in large-scale live concerts, corporate events, and immersive stage productions.
                     </p>
 
                     <div className="banner-one__btn-box wow fadeInUp" data-wow-delay="300ms" style={{ marginTop: '40px', display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '20px' }}>
