@@ -236,7 +236,7 @@ ul {
   font-weight: 500;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #00f0ff 0%, #8a2be2 50%, #ff4b9b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -4027,7 +4027,7 @@ ul {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  background: linear-gradient(90deg, #B20D5D 0%, #4A0AB4 100%);
+  background: linear-gradient(90deg, #00f0ff 0%, #8a2be2 50%, #ff4b9b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
