@@ -12521,6 +12521,12 @@ ul {
     height: 55px;
     width: 55px;
   }
+  .nav-logo-text-img {
+    height: 40px;
+  }
+  .mobile-nav-logo-text-img {
+    height: 40px;
+  }
   .nav-logo-text {
     font-size: 18px;
     letter-spacing: 1.5px;
@@ -12538,6 +12544,13 @@ ul {
   .nav-logo-text {
     font-size: 15px;
     letter-spacing: 1px;
+  }
+  .nav-logo-text-img,
+  .mobile-nav-logo-text-img {
+    height: 35px;
+  }
+  .stricky-fixed .nav-logo-text-img {
+    height: 30px;
   }
 }
 
