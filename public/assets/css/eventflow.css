@@ -158,6 +158,7 @@ ul {
   width: 100%;
   min-width: 300px;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .container {
@@ -640,24 +641,89 @@ ul {
 # Navigations One
 --------------------------------------------------------------*/
 .main-header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: block;
+  background: rgba(4, 0, 10, 0.95);
   width: 100%;
-  background: transparent;
   transition: all 500ms ease;
   z-index: 999;
+  overflow: hidden;
+}
+
+.main-header.fixed-header {
+  background: rgba(4, 0, 10, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  box-shadow: 
+    100px 50px 0 -1px #fff,
+    200px 30px 0 0 #eee,
+    350px 80px 0 -1px #ddd,
+    450px 25px 0 0 #fff,
+    600px 70px 0 -1px #eee,
+    750px 40px 0 0 #fff,
+    900px 60px 0 -1px #ddd,
+    1050px 35px 0 0 #eee,
+    1200px 75px 0 -1px #fff,
+    150px 120px 0 0 #ddd,
+    300px 110px 0 -1px #fff,
+    500px 130px 0 0 #eee,
+    700px 105px 0 -1px #fff,
+    850px 125px 0 0 #ddd,
+    1100px 115px 0 -1px #eee,
+    80px 20px 0 0 #fff,
+    250px 10px 0 -1px #ddd,
+    400px 45px 0 0 #eee,
+    550px 15px 0 -1px #fff,
+    700px 35px 0 0 #ddd,
+    850px 85px 0 -1px #fff,
+    1000px 50px 0 0 #eee,
+    120px 95px 0 -1px #ddd,
+    380px 140px 0 0 #fff,
+    620px 150px 0 -1px #eee,
+    950px 145px 0 0 #ddd,
+    1150px 75px 0 -1px #fff,
+    200px 65px 0 0 #eee,
+    420px 95px 0 -1px #fff,
+    800px 20px 0 0 #ddd,
+    1250px 110px 0 -1px #eee;
+  background: rgba(4, 0, 10, 0.95);
+  animation: twinkle 5s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .main-menu {
   position: relative;
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-menu__wrapper {
   position: relative;
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-menu__wrapper-inner {
@@ -666,8 +732,13 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 60px;
-  z-index: 1;
+  padding: 5px 50px;
+  z-index: 2;
+  transition: all 500ms ease;
+}
+
+.main-header.fixed-header .main-menu__wrapper-inner {
+  padding: 8px 50px;
 }
 
 .main-menu__wrapper-inner:before {
@@ -689,8 +760,13 @@ ul {
 .main-menu__logo {
   position: relative;
   display: block;
-  padding: 40px 0;
+  padding: 30px 0;
   z-index: 1;
+  transition: all 500ms ease;
+}
+
+.main-header.fixed-header .main-menu__logo {
+  padding: 8px 0;
 }
 
 .main-menu__main-menu-box {
@@ -704,7 +780,12 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 30px 0;
+  padding: 20px 0;
+  transition: all 500ms ease;
+}
+
+.main-header.fixed-header .main-menu__right {
+  padding: 8px 0;
 }
 
 .main-menu__cart-search-nav-sidebar-icon-and-btn-box {
@@ -1005,16 +1086,8 @@ ul {
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 1199px) {
-  .stricky-header {
-    display: none !important;
-  }
-}
-
-.stricky-header.stricky-fixed {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  visibility: visible;
+.stricky-header {
+  display: none !important;
 }
 
 .mobile-nav__buttons {
@@ -12459,6 +12532,11 @@ ul {
   animation: navLogoGlow 6s ease-in-out infinite;
 }
 
+.main-header.fixed-header .nav-logo-img {
+  height: 50px;
+  width: 50px;
+}
+
 @keyframes navLogoGlow {
   0%, 100% {
     box-shadow: 0 0 16px rgba(0, 174, 255, 0.55), 0 0 0 0 rgba(0, 174, 255, 0.1);
@@ -12493,6 +12571,11 @@ ul {
   height: 50px;
   object-fit: contain;
   display: block;
+  transition: all 500ms ease;
+}
+
+.main-header.fixed-header .nav-logo-text-img {
+  height: 35px;
 }
 
 /* Mobile nav logo text image */
