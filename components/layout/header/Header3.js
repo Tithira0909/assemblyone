@@ -19,7 +19,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                     </Link>
                   </div>
                 </div>
-                <div className="main-menu__right" style={{ padding: '5px 0' }}>
+                <div className="main-menu__right" style={{ padding: '0px 0' }}>
                   <div className="main-menu__main-menu-box">
                     <div className="mobile-nav__toggler" onClick={handleMobileMenu}>
                       <i className="fa fa-bars" />
